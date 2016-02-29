@@ -1,0 +1,37 @@
+//
+//  APTools.h
+//  Knight
+//
+//  Created by ji long on 14-2-17.
+//
+//
+
+#ifndef __APLib__APTools__
+#define __APLib__APTools__
+
+#include <iostream>
+#include "cocos2d.h"
+#include "ui/CocosGUI.h"
+#include "cocostudio/CocoStudio.h"
+
+USING_NS_CC;
+using namespace ui;
+using namespace cocostudio;
+
+class APTools
+{
+public:
+    static int getRand(int minNum, int maxNum);                                         //获取随机数
+    static float getRandFloat(float minNum, float maxNum);                              //获取随机数
+    static int getRandMicrosecond();                                                    //获取微秒随机数
+    static void PrintUIWidgetChildrenInfo(Widget* root);                                //打印所有子节点信息
+    static void PrintMovementNames(Armature *arm);                                      //打印骨骼动画所有动作名
+    static Vec2 getRandPoint(const Rect& rect);                                         //获取矩形里随机一个点
+    static Vec2 getRectPoint(const Rect& rect, const Vec2& pos);                        //获取一个点与矩形最近的相交点
+    static int getLevelRateNumber(int baseNumber, int lv, float rate);                  //获取等级增长率累加数值
+    static float getAngle(const Vec2& vCenter, const Vec2& v2);                         //得到两坐标的顺时针角度值
+    static float getAntiAngle(const Vec2& vCenter, const Vec2& v2);                     //得到两坐标的逆时针角度值
+    static Vec2 getRoundPoint(const Vec2& vCenter, float fAngle, float fRadius);        //获取圆上的坐标点
+};
+
+#endif /* defined(__Knight__APTools__) */

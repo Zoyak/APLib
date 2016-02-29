@@ -1,0 +1,38 @@
+//
+//  APLibHeader.h
+//  hero3_2
+//
+//  Created by liuye on 14-8-20.
+//
+//
+
+#ifndef hero3_2_APLibHeader_h
+#define hero3_2_APLibHeader_h
+
+#include "cocos2d.h"
+
+USING_NS_CC;
+
+#include "APTools.h"
+#include "APGeometry.h"
+#include "APPopLayer.h"
+#include "APStringHelper.h"
+#include "APFile.h"
+#include "APDynamicLabel.h"
+#include "APDynamicTimeLabel.h"
+#include "APDynamicLoadingBar.h"
+#include "APTimeLoopArmature.h"
+#include "APRoundBy.h"
+#include "APLoadingBarTo.h"
+#include "APDateHelper.h"
+#include "APShake.h"
+#include "APShakeUpDown.h"
+#include "APOBB.h"
+#include "APScrollView.h"
+#include "APLoadingBarFromTo.h"
+#include "APProgressTo.h"
+
+#define APMax(x,y) x > y ? x : y 
+#define APMin(x,y) x > y ? y : x
+
+#endif
